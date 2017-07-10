@@ -42,6 +42,7 @@ clean:
 	rm -f labtestrunner*
 	
 # CXX Testing	
+# Change this file path to match your directory
 CXXLOCATION = /Users/dillondragomir/Data_structures/dragomdv/Lab5/cxxtest
 CXXTESTGEN = $(CXXLOCATION)/bin/cxxtestgen
 
