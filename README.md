@@ -10,6 +10,7 @@ BST implemented in c++
 ## Compile Code
 - make
 - compiles sample code in bstsandbox
+- Use this as guide when using BST header
 ## Test Code
 - make test
 ## Check for Memory Leaks
