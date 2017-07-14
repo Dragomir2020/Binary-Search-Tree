@@ -288,7 +288,7 @@ public:
   }
   
 };
-/*
+
 class BSTConCopyAssignSpeed : public CxxTest::TestSuite {
 public:
 	
@@ -329,8 +329,7 @@ public:
   }
   
 };
-*/
-/*
+
 class BSTConCopyAssignSpeedAfter : public CxxTest::TestSuite {
 public:
 	
@@ -391,7 +390,7 @@ public:
   }
   
 };
-*/
+
 
 class BSTFind : public CxxTest::TestSuite {
 public:
@@ -486,7 +485,7 @@ public:
   
 };
 
-/*
+
 class BSTSpeed : public CxxTest::TestSuite {
 public:
 	
@@ -540,7 +539,7 @@ public:
   }
   
 };
-*/
+
 
 class BSTGetOrders : public CxxTest::TestSuite {
 public:
