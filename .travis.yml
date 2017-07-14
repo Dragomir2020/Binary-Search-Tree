@@ -4,14 +4,7 @@ language: cpp
 # Compiler selection
 compiler:
   - gcc
-  
-before_install:
-- sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test
-- sudo apt-get update -qq
-
-install:
-- sudo apt-get install -qq g++-4.8
-- export CXX="g++-4.8"
+  - Clang
   
 # Build steps
 script:
