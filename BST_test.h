@@ -291,8 +291,8 @@ public:
 
 class BSTConCopyAssignSpeed : public CxxTest::TestSuite {
 public:
-	/*
 	
+/*	
   void testCopySpeed1() { 
     BST<int> a(compare);
     // How fast to insert 1000 elements?
@@ -333,6 +333,7 @@ public:
 
 class BSTConCopyAssignSpeedAfter : public CxxTest::TestSuite {
 public:
+	/*
   void testCopySpeed1() {
     BST<int> a(compare);
     // How fast to insert 100 elements?
@@ -350,7 +351,7 @@ public:
     // Insert 100 more and make sure they are faster than O(n)
     // If it was O(n), then inserting 100 now should be about 5x as
     // slow as the first 100, so make sure it is faster.
-    /*
+    
     BST<int> b(a);
     clock_t last2_start = clock();
     for(int i = 0 ; i < 100; i++){
