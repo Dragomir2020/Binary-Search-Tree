@@ -288,11 +288,10 @@ public:
   }
   
 };
-
+/*
 class BSTConCopyAssignSpeed : public CxxTest::TestSuite {
 public:
 	
-/*	
   void testCopySpeed1() { 
     BST<int> a(compare);
     // How fast to insert 1000 elements?
@@ -328,12 +327,13 @@ public:
     // Allow 10% fudge factor
     TS_ASSERT_LESS_THAN(last_stop - last_start, pre_time * 110 / 100);
   }
-  */
+  
 };
-
+*/
+/*
 class BSTConCopyAssignSpeedAfter : public CxxTest::TestSuite {
 public:
-	/*
+	
   void testCopySpeed1() {
     BST<int> a(compare);
     // How fast to insert 100 elements?
@@ -389,8 +389,9 @@ public:
     clock_t last2_stop = clock();
     TS_ASSERT(hund_time * 5 > (last2_stop - last2_start));
   }
-  */
+  
 };
+*/
 
 class BSTFind : public CxxTest::TestSuite {
 public:
@@ -485,9 +486,10 @@ public:
   
 };
 
+/*
 class BSTSpeed : public CxxTest::TestSuite {
 public:
-	/*
+	
   void testInsertSpeed1() {
     BST<int> a(compare);
     // How fast to insert 100 elements?
@@ -536,8 +538,9 @@ public:
     // Allow 20% fudge factor
     TS_ASSERT_LESS_THAN(last2_stop - last2_start, hund_time * 120 / 100);
   }
-  */
+  
 };
+*/
 
 class BSTGetOrders : public CxxTest::TestSuite {
 public:
