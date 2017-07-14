@@ -288,10 +288,10 @@ public:
   }
   
 };
-
+/*
 class BSTConCopyAssignSpeed : public CxxTest::TestSuite {
 public:
-/*	
+	
   void testCopySpeed1() { 
     BST<int> a(compare);
     // How fast to insert 1000 elements?
@@ -308,7 +308,7 @@ public:
     // Allow 10% fudge factor
     TS_ASSERT_LESS_THAN(last_stop - last_start, pre_time * 110 / 100);
   }
-  */
+  
   void testAssignSpeed1() {
     BST<int> a(compare);
     // How fast to insert 100 elements?
@@ -329,7 +329,7 @@ public:
   }
   
 };
-
+*/
 class BSTConCopyAssignSpeedAfter : public CxxTest::TestSuite {
 public:
 	
