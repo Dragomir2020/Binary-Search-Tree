@@ -3,28 +3,7 @@ language: cpp
 
 # Compiler selection
 compiler:
-  clang:
-    - 3.5
-    - 3.6
-    - 3.7
-    - 3.8
-    - trunk
-  gcc:
-    - 4.9
-    - 5.0
-    - 6.0
-    - trunk
-
-stdlib:
-  - libc++
-  - stdlibc++
-
-boost:
-  - 1.59.0
-  - 1.60.0
-  - 1.61.0
-  - trunk
-  
+  - gcc -std=c++0x
 # Build steps
 script:
   - make test
