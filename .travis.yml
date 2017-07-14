@@ -5,5 +5,4 @@ compiler:
   
 script:
   - make clean
-  - make
   - make test
