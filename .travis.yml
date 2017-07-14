@@ -1,9 +1,18 @@
 # Enable C++ support
+sudo: false
 language: cpp
-
-# Compiler selection
 compiler:
-  - gcc -std=c++0x
-# Build steps
+  - gcc
+  - clang
+install:
+- if [ "$CXX" = "g++" ]; then export CXX="g++-4.8" CC="gcc-4.8"; fi
+addons:
+  apt:
+    sources:
+    - ubuntu-toolchain-r-test
+    packages:
+    - gcc-4.8
+    - g++-4.8
+    - clang
 script:
   - make test
