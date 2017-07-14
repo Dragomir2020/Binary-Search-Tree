@@ -43,7 +43,7 @@ clean:
 	
 # CXX Testing	
 # Change this file path to match your directory
-CXXLOCATION = /Users/dillondragomir/Data_structures/dragomdv/Lab5/cxxtest
+CXXLOCATION = /TRAVIS_BUILD_DIR/cxxtest
 CXXTESTGEN = $(CXXLOCATION)/bin/cxxtestgen
 
 test: testrunner
