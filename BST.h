@@ -363,10 +363,10 @@ private:
       
 	  this->insert(c->data);
 	  // Should this be pre post or in order?
-	  if(c->left != nullptr)
+	  if(c->left != NULL)
 	      preORet(c->left);
 	  
-	  if(c->right != nullptr)
+	  if(c->right != NULL)
 	      preORet(c->right);
 	  // Should this be at begining or end
 	  
