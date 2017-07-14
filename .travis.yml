@@ -1,1 +1,10 @@
-language: c
+# Enable C++ support
+language: cpp
+
+# Compiler selection
+compiler:
+  - gcc
+  
+# Build steps
+script:
+  - make test
