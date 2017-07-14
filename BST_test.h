@@ -288,7 +288,7 @@ public:
   }
   
 };
-/*
+
 class BSTConCopyAssignSpeed : public CxxTest::TestSuite {
 public:
 	
@@ -329,7 +329,7 @@ public:
   }
   
 };
-*/
+
 class BSTConCopyAssignSpeedAfter : public CxxTest::TestSuite {
 public:
 	
