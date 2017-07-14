@@ -15,4 +15,4 @@ addons:
     - g++-4.8
     - clang
 script:
-  - make test
+  - $CXX make test
