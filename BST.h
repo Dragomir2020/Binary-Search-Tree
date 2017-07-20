@@ -244,7 +244,6 @@ private:
 		return findR(thing,u->left);
 	else if((*cmpfn)(u->data, thing) < 0)
 		return findR(thing,u->right);
-	return 0;
   }
   // InOrder Recursive
   void inOrder(Node<T>* Root, string& App){
