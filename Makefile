@@ -1,7 +1,7 @@
 # Declare Constants
 CC=g++
-CFLAGS=-c -Wall -ggdb -I.
-LDFLAGS=
+CFLAGS=-c -Wall -ggdb -I. --coverage -O0 -v
+LDFLAGS=--coverage
 SOURCES=bstsandbox.cpp
 EXECUTABLE=bstsandbox
 TESTS=BST_test.h
@@ -51,7 +51,7 @@ test: testrunner
 	
 
 testrunner: testrunner.cpp 
-	g++ -I. -ggdb -Wall -I$(CXXLOCATION)/ -o testrunner testrunner.cpp
+	g++ -v --coverage -I. -ggdb -Wall -I$(CXXLOCATION)/ -o testrunner testrunner.cpp
 	
 testrunner.cpp: $(HEADERS) $(TESTSSOURCES) $(SOURCES)
 	 $(CXXTESTGEN) --error-printer -o testrunner.cpp $(TESTS)
