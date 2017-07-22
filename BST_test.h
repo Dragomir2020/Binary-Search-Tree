@@ -220,8 +220,14 @@ public:
 class BSTConCopyAssign : public CxxTest::TestSuite {
 public:
   // Copy Constructor
+  void testCopy0() {
+    BST<int> a(compare);
+    BST<int> b(a);
+    TS_ASSERT_EQUALS(a.size(), 0);
+    TS_ASSERT_EQUALS(b.size(), 0);
+  }
 
-	void testCopy() {
+  void testCopy() {
     BST<int> a(compare);
     a.insert(5);
     BST<int> b(a);
