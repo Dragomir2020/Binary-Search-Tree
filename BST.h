@@ -237,13 +237,13 @@ private:
   bool findR(T thing, Node<T>* u){
 	 
   	if (u == NULL) 
-		return 0;
+	    return 0;
 	else if((*cmpfn)(u->data, thing) == 0)
-		return 1;
+	    return 1;
 	else if((*cmpfn)(u->data, thing) > 0)
-		return findR(thing,u->left);
-	else if((*cmpfn)(u->data, thing) < 0)
-		return findR(thing,u->right);
+	    return findR(thing,u->left);
+	else
+	    return findR(thing,u->right);
   }
   // InOrder Recursive
   void inOrder(Node<T>* Root, string& App){
